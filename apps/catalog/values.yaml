@@ -1,0 +1,47 @@
+replicaCount: 1
+
+image:
+  repository: 992824239500.dkr.ecr.eu-west-2.amazonaws.com/retail-store-catalog
+  pullPolicy: IfNotPresent
+  tag: "6486f8f"
+
+imagePullSecrets: []
+
+# imagePullSecrets:
+#   - name: aws-ecr-cred
+
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  name: ""
+
+service:
+  type: ClusterIP
+  port: 8080
+
+ingress:
+  enabled: false
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 256Mi
+  requests:
+    cpu: 100m
+    memory: 256Mi
+
+livenessProbe:
+  httpGet:
+    path: /health
+    port: 8080
+  initialDelaySeconds: 30
+  periodSeconds: 10
+
+readinessProbe:
+  httpGet:
+    path: /health
+    port: 8080
+  initialDelaySeconds: 30
+  periodSeconds: 10
