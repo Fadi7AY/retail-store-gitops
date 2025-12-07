@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: 992824239500.dkr.ecr.eu-west-2.amazonaws.com/retail-store-orders
   pullPolicy: IfNotPresent
-  tag: "6486f8f"
+  tag: "590e38c"
 
 imagePullSecrets: []
 
@@ -105,7 +105,7 @@ postgresql:
   image:
     repository: public.ecr.aws/docker/library/postgres
     pullPolicy: IfNotPresent
-    tag: "6486f8f"
+    tag: "590e38c"
 
   service:
     type: ClusterIP
@@ -134,7 +134,7 @@ rabbitmq:
   image:
     repository: "public.ecr.aws/docker/library/rabbitmq"
     pullPolicy: IfNotPresent
-    tag: "6486f8f"
+    tag: "590e38c"
 
   service:
     type: ClusterIP

@@ -4,7 +4,7 @@ replicaCount: 1
 image:
   repository: 992824239500.dkr.ecr.eu-west-2.amazonaws.com/retail-store-ui
   pullPolicy: IfNotPresent
-  tag: "6486f8f"  # Using the specific tag that exists . for testing only , I will change it in the ci
+  tag: "590e38c"  # Using the specific tag that exists . for testing only , I will change it in the ci
 
 imagePullSecrets: []
 nameOverride: ""

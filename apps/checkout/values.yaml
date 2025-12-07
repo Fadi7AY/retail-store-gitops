@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: 992824239500.dkr.ecr.eu-west-2.amazonaws.com/retail-store-checkout
-  tag: "6486f8f"  
+  tag: "590e38c"  
   pullPolicy: IfNotPresent
 
 
