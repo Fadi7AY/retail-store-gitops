@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: 992824239500.dkr.ecr.eu-west-2.amazonaws.com/retail-store-cart
-  tag: "590e38c"
+  tag: "58c283b"
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
@@ -89,7 +89,7 @@ dynamodb:
   image:
     repository: public.ecr.aws/aws-dynamodb-local/aws-dynamodb-local
     pullPolicy: IfNotPresent
-    tag: "590e38c"
+    tag: "58c283b"
 
   service:
     type: ClusterIP
