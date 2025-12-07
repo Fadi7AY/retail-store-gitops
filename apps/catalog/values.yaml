@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: 992824239500.dkr.ecr.eu-west-2.amazonaws.com/retail-store-catalog
   pullPolicy: IfNotPresent
-  tag: "590e38c"
+  tag: "6257f97"
 
 imagePullSecrets: []
 
