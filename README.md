@@ -4,6 +4,18 @@ This repository serves as the **Single Source of Truth** for the Retail Store Mi
 
 Unlike the application source code repositories, this repository contains only the Kubernetes manifests, Helm charts, and environment-specific configurations required to run the infrastructure.
 
+## At a glance
+
+```mermaid
+flowchart LR
+    N0["Update Helm values"]
+    N1["Commit configuration"]
+    N2["Argo CD reconciliation"]
+    N3["Kubernetes workloads"]
+    N0 --> N1 --> N2 --> N3
+```
+
+
 ## 📖 Architecture Overview
 
 * **Deployment Tool:** ArgoCD
